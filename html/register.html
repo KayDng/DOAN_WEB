@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="" class="" alt="" ></a>
+
+        <div>
+			<ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="#">SHOP ALL</a></li>
+                <li><a href="tops.html">TOPS</a></li>
+                <li><a href="bottoms.html">BOTTOMS</a></li>
+                <li><a href="outerwear.html">OUTERWEAR</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="sale.html">SIZE</a></li>
+                <a href="#" id="close"><i class="far fa-times-circle"></i></a>
+            </ul>
+        </div>
+
+		<div>
+			<ul class="icon-bar">
+				<li><a href="cart.html" id="lg"><i class="far fa-search"></i></a></li>
+				<li><a href="../html/login.html" id="lg"><i class="far fa-user"></i></a></li>
+                <li><a href="cart.html" id="lg"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+        
+        <div id="mobile">
+			<a href="cart.html"><i class="far fa-search"></i></a>
+			<a href="../html/login.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a> 
+            <i id="bar" class="fa fa-align-justify" ></i>
+        </div>
+    </section>
+
+    <section id="login-moblie">
+        <div class="grid">
+            <h2 class="title">ĐĂNG KÝ TÀI KHOẢN</h2>
+            <hr>
+            <form action="" method="post" class="form-login-moblie" id="form-1">
+                <h3>THÔNG TIN CÁ NHÂN</h3>                
+               <div class="form-group one">
+                <label for="fullname" class="form-label" >Họ và Tên</label>
+                <input type="text" name="fullname" class="input-field" id="fullname" placeholder="Nhập họ tên">
+               </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Nhập email"  class="input-field"> 
+                </div>
+                <div  class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="input-field" >
+                </div>
+                <div  class="form-group">
+                    <label for="password" class="form-label">Nhập lại mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="Nhập lại mật khẩu" class="input-field" >
+                </div>
+                <div class="btn-group register">
+                    <button class="btn register acitve mobile">Đăng ký</button>
+                    <a class="btn exit acitve" id="back" href="../html/login.html"><i class="fa-solid fa-arrow-left-long none"></i><span>Quay lại</span></a>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="section-p1" style="padding-bottom:0;">
+        <div class="col">
+            <h3>GIỚI THIỆU <hr></h3>
+            
+            <p>Chào mừng bạn đến với ngôi nhà của chúng tôi! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang đậm cá tính của chúng tôi, và đang không ngừng phát triển lớn mạnh.</p>
+        </div>
+
+        <div class="col">
+            <h3>Thông Tin Liên Hệ <hr></h3>
+            <p>
+                <i class="fas fa-map-marker-alt icon"></i>
+                9/20 Thạnh Mỹ Lợi, P.Thạnh Mỹ Lợi, TP.Thủ Đức
+            </p>
+            <p>
+                <i class="fas fa-clock icon"></i>
+                8:00 - 21:00
+            </p>
+            <p>
+                <i class="fas fa-phone-alt icon"></i>
+                <a href="tel:0379201809">0379201809</a>
+            </p>
+            <p>
+                <i class="fas fa-envelope icon"></i>
+                <a href="mailto:khanhkt9511@gmail.com">khanhkt9511@gmail.com</a>
+            </p>
+        </div>
+        <div class="col">
+            <h3>MENU <hr></h3>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="#">Bảng size</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>MẠNG XÃ HỘI <hr></h3>
+            <div class="social-media">  
+                <a href="https://www.facebook.com/28.9.001.Me/"><img src="../img/icon/fb.png" alt=""></a>
+                <a href="https://www.instagram.com/28_9_001.me/"><img src="../img/icon/ig.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <p>KayDng&reg; All Rights Reserved.</p>
+    </section>
+
+    <!-- js -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
