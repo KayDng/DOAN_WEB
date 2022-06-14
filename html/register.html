@@ -44,7 +44,7 @@
     </section>
 
     <section id="login">
-        <form>
+        <form action="#" method="post" style="min-height: 600px;">
            <div class="container">
                 <header class="head-form">
                     <h2>Đăng Ký</h2>
@@ -54,36 +54,45 @@
                     <span class="input-item">
                         <i class="fa fa-user-circle"></i>
                     </span> 
-                    <input class="form-input" id="txt-user"type="text" placeholder="Họ và tên"required>
+                    <input class="form-input" id="txt-user" type="text" placeholder="Họ và tên"required>
                 </div>  
-                
+
                 <div>            
                     <span class="input-item">
                         <i class="fa-solid fa-envelope"></i>
                     </span> 
-                    <input class="form-input" id="txt-user"type="text" placeholder="Tên đăng nhập"required>
+                    <input class="form-input" id="txt-user" type="text" placeholder="Gmail"required>
+                </div>   
+
+                <div>            
+                    <span class="input-item">
+                        <i class="fa-solid fa-phone"></i>
+                    </span> 
+                    <input class="form-input" id="txt-user" type="" placeholder="Số điện thoại"required>
                 </div>    
-
+                
                 <div>
                     <span class="input-item">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input class="form-input" type="password" placeholder="Mật khẩu" id="pwd"  name="password" required>
-                    <div id="toggle" onclick="showPassword()"></div>
+                    <input class="form-input" ac type="password" placeholder="Mật khẩu" id="pwd-signup"  name="password" required>
+                    <div id="toggle-signup" onclick="showPasswordSingup()"></div>
                 </div>
 
                 <div>
                     <span class="input-item">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input class="form-input" type="password" placeholder="Nhập lại mật khẩu" id="pwd"  name="password" required>
-                    <div id="toggle" onclick="showPassword()"></div>
+                    <input class="form-input" type="password" placeholder="Nhập lại mật khẩu" id="pwd-signup-again"  name="password" required>
+                    <div id="toggle-signup-again" onclick="showPassword()"></div>
                 </div>
 
-                <button class="btn log-in"> Log In </button>
-                <div style="width:80%;">
-                    <button class="submits fg-pass">Quên Mật Khẩu</button>
-                    <button class="submits sign-up" onclick="window.location.href='../html/register.html'">
+                <div style="width:80%; display: flex; ">
+                    <button class="submits sign-up" onclick="window.location.href   ='../html/login.html'">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Quay Lại
+                    </button>
+                    <button class="submits sign-up" onclick="window.location.href='../html/customer.html'">
                         Đăng Ký
                         <i class="fa fa-user-plus"></i>
                     </button>
