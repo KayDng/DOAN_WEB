@@ -844,7 +844,9 @@ footer ul li{
       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
-#login #toggle{
+#login #toggle,
+#login #toggle-signup,
+#login #toggle-signup-again{
     position: absolute;
     right: 7em;
     top: 0.1em;
@@ -858,14 +860,25 @@ footer ul li{
     font-family: fontAwesome;
 }
 
-#login #toggle::before{
+#login #toggle::before,
+#login #toggle-signup::before,
+#login #toggle-signup-again::before{
     content: "\f06e";
 }
 
-#login #toggle.hide::before{
+#login #toggle.hide::before,
+#login #toggle-signup.hide-signup::before,
+#login #toggle-signup-again::before{
     content: "\f070";
 }
 
+#login #toggle-signup{
+    top: 6.3em;
+
+}
+#login #toggle-signup-again{
+    top: 10.2em;
+}
                                                     /*todo Login Mobile */
 :root{
     --main-coler:#088178; 
