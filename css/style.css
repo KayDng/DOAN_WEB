@@ -711,14 +711,14 @@ footer ul li{
 
 
                                                     /*todo Sign in */
-#sign-in{
+#login{
     background-image: linear-gradient(to top, #a8edea 0%, #088178 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     display: flex;
 }
 
-#sign-in form {
+#login form {
     width: 450px;
     min-height: 550px;
     height: auto;
@@ -730,36 +730,36 @@ footer ul li{
     position: relative ;
 }
 
-#sign-in form .container{
+#login form .container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-#sign-in .head-form{
+#login .head-form{
     margin: 8% auto 5% auto;
     text-align: center;
 }
 
-#sign-in .head-form h2 {
+#login .head-form h2 {
     font-size: 250%;
     color: #1a1a1a;
 }
 
-#sign-in .head-form p {
+#login .head-form p {
     letter-spacing: 0.05em;
     color: #1a1a1a;
 }
 
-#sign-in .input-item {
+#login .input-item {
     background: #fff;
     color: #222;
     padding: 15.5px 0px 15.5px 10px;
     border-radius: 5px 0px 0px 5px;
 }
 
-#sign-in .form-input{
+#login .form-input{
     width: 250px;
     height: 50px;
     margin-top: 2%;
@@ -771,7 +771,7 @@ footer ul li{
     border-radius: 0px 5px 5px 0px;
 }
 
-#sign-in button {
+#login button {
     color: #222;
     width: 280px;
     height: 50px;
@@ -786,25 +786,25 @@ footer ul li{
     position: relative;
 }
 
-#sign-in .submits {
-    width: 48%;
+#login .submits {
+    width: 44%;
     float: left;
     margin-left: 2%;
 }
 
-#sign-in .fg-pass {
+#login .fg-pass {
     background: transparent;
 }
 
-#sign-in .sign-up{
+#login .sign-up{
     background: #B8F2E6;
 }
 
-#sign-in .btn{
+#login .btn{
     z-index: 1;
 }
 
-#sign-in .btn:after {
+#login .btn:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -823,28 +823,28 @@ footer ul li{
     transition: all 0.3s ease;
 }
 
-#sign-in .btn:hover {
+#login .btn:hover {
     color: #fff;
 }
 
-#sign-in .btn:hover:after {
+#login .btn:hover:after {
     top: 0;
     height: 100%;
 }  
 
-#sign-in .sign-up:before {
+#login .sign-up:before {
     height: 0%;
     width: 2px;
 }
   
-#sign-in .sign-up:hover {
+#login .sign-up:hover {
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
       inset -4px -4px 6px 0 rgba(255,255,255,.2),
       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
-#sign-in #toggle{
+#login #toggle{
     position: absolute;
     right: 7em;
     top: 0.1em;
@@ -858,11 +858,11 @@ footer ul li{
     font-family: fontAwesome;
 }
 
-#sign-in #toggle::before{
+#login #toggle::before{
     content: "\f06e";
 }
 
-#sign-in #toggle.hide::before{
+#login #toggle.hide::before{
     content: "\f070";
 }
 

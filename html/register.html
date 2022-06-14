@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    
+    <title>Sign Up</title>
+    <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
 </head>
 <body>
     <section id="header">
@@ -43,35 +43,53 @@
         </div>
     </section>
 
-    <section id="login-mobile">
-        <div class="grid">
-            <h2 class="title">ĐĂNG KÝ TÀI KHOẢN</h2>
-            <hr>
-            <form action="" method="post" class="form-login-mobile" id="form-1">
-                <h3>THÔNG TIN CÁ NHÂN</h3>                
-               <div class="form-group one">
-                <label for="fullname" class="form-label" >Họ và Tên</label>
-                <input type="text" name="fullname" class="input-field" id="fullname" placeholder="Nhập họ tên">
-               </div>
-                <div class="form-group">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Nhập email"  class="input-field"> 
-                </div>
-                <div  class="form-group">
-                    <label for="password" class="form-label">Mật khẩu</label>
-                    <input type="password" onchange="onchange()" name="password" id="password" placeholder="Nhập mật khẩu" class="input-field" >
-                </div>
-                <div  class="form-group">
-                    <label for="password" class="form-label">Nhập lại mật khẩu</label>
-                    <input type="password" onchange="onchange()" name="password" id="password " placeholder="Nhập lại mật khẩu" class="input-field" >
-                </div>
-                <div class="btn-group register">
-                    <button class="btn register acitve mobile">Đăng ký</button>
-                    <a class="btn exit acitve" id="back" href="../html/login.html"><i class="fa-solid fa-arrow-left-long none"></i><span>Quay lại</span></a>
-                </div>
-            </form>
+    <section id="login">
+        <form>
+           <div class="container">
+                <header class="head-form">
+                    <h2>Đăng Ký</h2>
+                    <p>Vui lòng nhập thông tin của bạn</p>
+                </header>
+                <div>            
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span> 
+                    <input class="form-input" id="txt-user"type="text" placeholder="Họ và tên"required>
+                </div>  
+                
+                <div>            
+                    <span class="input-item">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span> 
+                    <input class="form-input" id="txt-user"type="text" placeholder="Tên đăng nhập"required>
+                </div>    
 
-        </div>
+                <div>
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Mật khẩu" id="pwd"  name="password" required>
+                    <div id="toggle" onclick="showPassword()"></div>
+                </div>
+
+                <div>
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Nhập lại mật khẩu" id="pwd"  name="password" required>
+                    <div id="toggle" onclick="showPassword()"></div>
+                </div>
+
+                <button class="btn log-in"> Log In </button>
+                <div style="width:80%;">
+                    <button class="submits fg-pass">Quên Mật Khẩu</button>
+                    <button class="submits sign-up" onclick="window.location.href='../html/register.html'">
+                        Đăng Ký
+                        <i class="fa fa-user-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
     </section>
 
     <footer class="section-p1" style="padding-bottom:0;">
@@ -123,7 +141,7 @@
     <section class="copyright">
         <p>KayDng&reg; All Rights Reserved.</p>
     </section>
-
+    
     <!-- js -->
     <script src="../js/script.js"></script>
 </body>
