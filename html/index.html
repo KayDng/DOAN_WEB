@@ -30,7 +30,7 @@
 		<div>
 			<ul class="icon-bar">
 				<li><a href="cart.html" id="lg"><i class="far fa-search"></i></a></li>
-                <li><span id="lg"><i class="far fa-user login-click" onclick="document.getElementById('login-form').style.display='block'"></i></span></li>
+				<li><a href="cart.html" id="lg"><i class="far fa-user"></i></a></li>
                 <li><a href="cart.html" id="lg"><i class="far fa-shopping-bag"></i></a></li>
             </ul>
         </div>
@@ -527,35 +527,6 @@
         <p>KayDng&reg; All Rights Reserved.</p>
     </section>
 
-    <!-- login -->
-    <div id="login-form">
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" onclick="login()" class="toggle-btn">Đăng Nhập</button> 
-                <button type="button" onclick="register()" class="toggle-btn">Đăng Ký</button> 
-            </div>
-            <div class="social-icons">
-                <img src="../img/icon/fb_lg.png" alt="">
-                <img src="../img/icon/gg_lg.png" alt="">
-            </div>
-            <form id="login" class="input-group" style="margin-top:18px;">
-                <input type="email" name="email" class="input-field" placeholder="Nhập Email của bạn" required>
-                <input type="password" id="password" name="password" class="input-field" placeholder="Nhập mật khẩu của bạn" required>
-                <div id="toggle" onclick="showPassword()"></div>
-                <div><a href="#">Quên mật khẩu?</a></div>
-                <button type="submit" class="submit-btn">Đăng Nhập</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" name="" class="input-field" placeholder="Nhập họ và tên" required>
-                <input type="email" name="" class="input-field" placeholder="Nhập Email của bạn" required>
-                <input type="password" id="hide-password" name="password" class="input-field" placeholder="Nhập mật khẩu" required>
-                <input type="password" id="hide" name="password" class="input-field" placeholder="Nhập lại mật khẩu" required>
-                <input type="checkbox" onclick="showPassword()" style="margin:10px 10px 0 0;" id="hide-password" name="hide-password"><span >Hiện mật khẩu</span>
-                <button style="margin:10px" type="submit" class="submit-btn">Đăng Ký</button>
-            </form>
-        </div>
-    </div>
     <!-- js -->
     <script src="../js/script.js"></script>
 </body>

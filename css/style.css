@@ -643,178 +643,252 @@ footer ul li{
     padding-top: 30px;
 }
 
-#prodetails .single-pro-details h4{
+#prodetails .single-pro-details .select-swap {
+    display: inline-block;	
+    vertical-align: middle;
+}
+
+#prodetails .single-pro-details .select-swap {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+#prodetails .single-pro-details .select-swap input{
+    display: none;
+}
+
+#prodetails .single-pro-details .swatch-element label{
+	display: block;
+	margin: 0;
+	background: #fff;
+	width: 25px !important;
+	height: 25px !important;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	font-size: 13px;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+}
+
+#prodetails .single-pro-details label .sd {
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+}
+/* #prodetails .single-pro-details h4{
     padding: 40px 0 20px 0;
 }
 
 #prodetails .single-pro-details h2{
     font-size: 26px;
 }
-                                                    /*todo Login */
-#login-form .form-box{
-    width: 400px;
-    min-height: 480px;
-    position: relative ;
-    margin: 6% auto;
-    background-color: #fff;
-    padding: 5px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-      0 10px 10px rgba(0,0,0,0.22);
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }
 
-#login-form{
-    position: fixed;
-    top:0;
-    right: 0;
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color:#fff;
+} */
+
+
+
+                                                    /*todo Sign in */
+#sign-in{
+    background-image: linear-gradient(to top, #a8edea 0%, #088178 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#sign-in form {
+    width: 450px;
+    min-height: 550px;
+    height: auto;
+    border-radius: 5px;
+    margin: 7% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #088178 50%);
+    position: relative ;
+}
+
+#sign-in form .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#sign-in .head-form{
+    margin: 8% auto 5% auto;
+    text-align: center;
+}
+
+#sign-in .head-form h2 {
+    font-size: 250%;
+    color: #1a1a1a;
+}
+
+#sign-in .head-form p {
+    letter-spacing: 0.05em;
+    color: #1a1a1a;
+}
+
+#sign-in .input-item {
+    background: #fff;
+    color: #222;
+    padding: 15.5px 0px 15.5px 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#sign-in .form-input{
+    width: 250px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    color: #5E6472;
+    outline: none;
+    border: none; 
+    border-radius: 0px 5px 5px 0px;
+}
+
+#sign-in button {
+    color: #222;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    position: relative;
+}
+
+#sign-in .submits {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+
+#sign-in .fg-pass {
+    background: transparent;
+}
+
+#sign-in .sign-up{
+    background: #B8F2E6;
+}
+
+#sign-in .btn{
+    z-index: 1;
+}
+
+#sign-in .btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: none; 
-    align-items: center;
-    justify-content: center;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    -4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
 }
 
-.login-click{
-    cursor:pointer;
+#sign-in .btn:hover {
+    color: #fff;
 }
 
-#login-form .button-box{
-    width: 240px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #24ff331f;
-    border-radius: 30px;
-}
-
-#login-form .button-box button{
-    text-align: center;
-}
-
-#login-form .button-box .toggle-btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
-#btn{
+#sign-in .btn:hover:after {
     top: 0;
-    left: 0;
-    position: absolute;
-    width: 126px;
     height: 100%;
-    background: linear-gradient(to left,#088178, #28f29c);
-    border-radius: 30px;
-    transition: .5s;
-    text-align: center;
+}  
+
+#sign-in .sign-up:before {
+    height: 0%;
+    width: 2px;
+}
+  
+#sign-in .sign-up:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
-#login-form .social-icons{
-    margin: 20px auto;
-    text-align: center;
-}
-
-#login-form .social-icons img{
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: 0 0 20px 0 #7f7f7f3d;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-#login-form .input-group{
-    top: 160px;
+#sign-in #toggle{
     position: absolute;
-    width: 300px;
-    transition: .5s;
-}
-
-.input-field{
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-}
-
-#login-form .submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: linear-gradient(to left,#088178, #28f29c);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
-
-#login-form .input-group a {
-    display: block;
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 5px 5px 10px 5px;
-}
-
-#login{
-    left: 50px;
-}
-
-#register{
-    left: 900px
-}
-
-#toggle,
-#toggles,
-#toggless{
-    position: absolute;
-    top: -5px;
-    right: 15px;
+    right: 7em;
+    top: 0.1em;
     height:100%;
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.9em;
     cursor: pointer;
     user-select: none;
     color: #333;
     font-family: fontAwesome;
 }
 
-#toggle::before{
+#sign-in #toggle::before{
     content: "\f06e";
 }
 
-#toggle.hide::before{
+#sign-in #toggle.hide::before{
     content: "\f070";
 }
+
                                                     /*todo Login Mobile */
 :root{
     --main-coler:#088178; 
     --title-coler:rgb(71, 68, 68);
 }
 
-#login-moblie .grid{
+#login-mobile .grid{
     max-width: 1200px;
     margin: 0px auto;
 }
 
-#login-moblie .title{
+#login-mobile .title{
     font-size: 20px;
     color: var(--title-coler);
 }
 
-#login-moblie hr{
+#login-mobile hr{
     background-color: var(--main-coler);
     border: 0;
     height: 2px;
 }
 
-#login-moblie .form-group{
+#login-mobile .form-group{
     font-size: 14px;
     font-weight: 700;
     display: flex;
@@ -823,33 +897,33 @@ footer ul li{
     margin-bottom: 10px;
 }
 
-#login-moblie .form-login-moblie{
+#login-mobile .form-login-mobile{
     margin: 35px auto;
     max-width: 50%;
 }
 
-#login-moblie h3{
+#login-mobile h3{
     color: var(--title-coler);
     font-weight: 500;
 }
 
-#login-moblie .form-login-moblie p{
+#login-mobile .form-login-mobile p{
     color: rgb(58, 57, 57);
     font-weight: 600;
     margin: 20px 0 0 0;
     font-size: 12px
 }
 
-#login-moblie .btn{
+#login-mobile .btn{
     font-size: 15px;
     cursor: pointer;
 }
 
-#login-moblie .btn.acitve:hover{
+#login-mobile .btn.acitve:hover{
     opacity: 0.5;
 }
 
-#login-moblie .btn{
+#login-mobile .btn{
     border: none;
     background-color: var(--main-coler);
     color: white;
@@ -857,42 +931,42 @@ footer ul li{
     border-radius: 2px;
 }
 
-#login-moblie .btn-group a{
+#login-mobile .btn-group a{
     font-size: 15px;
     list-style: none;
     text-decoration: none;
     color: rgb(75, 69, 69);
 }
 
-#login-moblie .btn-group a:nth-child(2)
+#login-mobile .btn-group a:nth-child(2)
 {
     margin-left: 35%;
 }
 
-#login-moblie .btn-group a:hover{
+#login-mobile .btn-group a:hover{
     color: var(--main-coler);
 }
 
-#login-moblie .form-group.one
+#login-mobile .form-group.one
 {
     margin-top: 28px;
 }
 
-#login-moblie .btn.exit{
+#login-mobile .btn.exit{
     color: white;
     margin: 0 !important;
 }
 
-#login-moblie .btn.exit:hover{
+#login-mobile .btn.exit:hover{
     color: white;
 }
 
-#login-moblie .btn.register
+#login-mobile .btn.register
 {
     margin-right: 48.5%;
 }
 
-#login-moblie .none{
+#login-mobile .none{
     display: none;
 }
 
@@ -1018,41 +1092,41 @@ footer ul li{
         height: 100%;    
     }
                                                         /*todo Login */
-    #login-moblie .form-login-moblie{
+    #login-mobile .form-login-mobile{
         margin: 50px 54px;
     }
 
-    #login-moblie .btn-group a:nth-child(2) {
+    #login-mobile .btn-group a:nth-child(2) {
         display: block;
         margin: 5px 0;
     }
 
-    #login-moblie .title{
+    #login-mobile .title{
         margin-left: 25px;
     }
 
-    #login-moblie .input-field{
+    #login-mobile .input-field{
         width: 515px;
     }
 
-    #login-moblie .btn{
+    #login-mobile .btn{
         width: 100px;
         margin-top: 10px;
     }
     
-    #login-moblie .btn.exit{
+    #login-mobile .btn.exit{
         margin-top: 10px !important;
     }
 
-    #login-moblie .exit{
+    #login-mobile .exit{
         display: inline-block !important;
     }
 
-    #login-moblie .btn.register{
+    #login-mobile .btn.register{
         margin-right: 47%;
     }
 
-    #login-moblie .form-login-moblie{
+    #login-mobile .form-login-mobile{
         max-width: 100%;
     }
 }
@@ -1118,23 +1192,23 @@ footer ul li{
         padding-bottom: 10px;
     }
 
-    #login-moblie .input-field{
+    #login-mobile .input-field{
         width : 100%
     }
 
-    #login-moblie .form-group{
+    #login-mobile .form-group{
         width : 100%;
     }
 
-    #login-moblie .btn{
+    #login-mobile .btn{
         width: 100%;
     }
     
-    #login-moblie .mobile{
+    #login-mobile .mobile{
         margin: 0 !important;
     }
     
-    #login-moblie .none{
+    #login-mobile .none{
         display: inline-block;
         margin-right: 8px;
     }
