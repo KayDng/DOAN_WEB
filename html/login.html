@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>login</title>
+    <title>Sign In</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -14,7 +14,7 @@
     <section id="header">
         <a href="index.html"><img src="" class="" alt="" ></a>
 
-        <div>   
+        <div>
 			<ul id="navbar">
                 <li><a class="active" href="index.html">HOME</a></li>
                 <li><a href="#">SHOP ALL</a></li>
@@ -42,7 +42,8 @@
             <i id="bar" class="fa fa-align-justify" ></i>
         </div>
     </section>
-    <div id="sign-in">
+
+    <section id="login">
         <form>
            <div class="container">
                 <header class="head-form">
@@ -53,7 +54,7 @@
                     <span class="input-item">
                         <i class="fa fa-user-circle"></i>
                     </span> 
-                    <input class="form-input" id="txt-user"type="text" placeholder="Tên đăng nhập"required>
+                    <input class="form-input" id="txt-signin"type="text" placeholder="Email hoặc số điện thoại"required>
                 </div>    
 
                 <div>
@@ -64,17 +65,17 @@
                     <div id="toggle" onclick="showPassword()"></div>
                 </div>
 
-                <button class="btn log-in"> Log In </button>
-                <div>
+                <button class="btn log-in"> Đăng Nhập </button>
+                <div style="width:80%;">
                     <button class="submits fg-pass">Quên Mật Khẩu</button>
-                    <button class="submits sign-up">
-                        <a href="../html/register.html"></a>
+                    <button class="submits sign-up" onclick="window.location.href='../html/register.html'">
+                        Đăng Ký
                         <i class="fa fa-user-plus"></i>
                     </button>
                 </div>
             </div>
         </form>
-    </div>
+    </section>
 
     <footer class="section-p1" style="padding-bottom:0;">
         <div class="col">
