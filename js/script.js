@@ -1,4 +1,5 @@
                     //todo: Wrapper picture
+
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
@@ -14,7 +15,9 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
                     //todo: PASSWORD
+
 const password = document.getElementById('pwd');
 const pwd_signup = document.getElementById('pwd-signup');
 const pwd_signup_again = document.getElementById('pwd-signup-again');
@@ -55,3 +58,53 @@ function showPassword(){
     }
 }
 
+function notification(){
+    if (password.type === 'password'){
+        password.setAttribute('type', 'text');
+        toggle.classList.add('hide');
+    }
+    else {
+        password.setAttribute('type', 'password');
+        toggle.classList.remove('hide');
+    }
+}
+
+                    //todo: toggle size button
+
+const sizeBtns = document.querySelectorAll('.size-radio-btn');
+let checkedBtn = 0;
+
+sizeBtns.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        sizeBtns[checkedBtn].classList.remove('check');
+        item.classList.add('check');
+        checkedBtn = i;
+    })
+})
+
+                    //todo: toggl Image Slide
+
+const productImages = document.querySelectorAll(".product-container .product-gallery-container img");
+const productImageSlide = document.querySelector(".image-slider");
+
+let activeImageSlide = 0;
+
+productImages.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        productImages[activeImageSlide].classList.remove('actives');
+        item.classList.add('actives');
+        productImageSlide.style.backgroundImage = `url('${item.src}')`;
+        activeImageSlide = i;
+    })
+})
+
+                    //todo: password
+function onChange() {
+  const password = document.querySelector('input[name=pwd-signup]');
+  const confirm = document.querySelector('input[name=pwd-signup-again]');
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+  } else {
+    confirm.setCustomValidity('Passwords do not match');
+  }
+}
