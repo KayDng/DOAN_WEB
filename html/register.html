@@ -75,7 +75,7 @@
                     <span class="input-item">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input class="form-input" ac type="password" placeholder="Mật khẩu" id="pwd-signup"  name="password" required>
+                    <input class="form-input" type="password" placeholder="Mật khẩu" onChange="onChange()" id="pwd-signup"  name="pwd-signup" required>
                     <div id="toggle-signup" onclick="showPasswordSingup()"></div>
                 </div>
 
@@ -83,7 +83,7 @@
                     <span class="input-item">
                         <i class="fa fa-key"></i>
                     </span>
-                    <input class="form-input" type="password" placeholder="Nhập lại mật khẩu" id="pwd-signup-again"  name="password" required>
+                    <input class="form-input" type="password" placeholder="Nhập lại mật khẩu" id="pwd-signup-again" onChange="onChange()"  name="pwd-signup-again" required>
                     <div id="toggle-signup-again" onclick="showPassword()"></div>
                 </div>
 
@@ -92,7 +92,7 @@
                         <i class="fa-solid fa-arrow-left"></i>
                         Quay Lại
                     </button>
-                    <button class="submits sign-up" onclick="window.location.href='../html/customer.html'">
+                    <button class="submits sign-up">
                         Đăng Ký
                         <i class="fa fa-user-plus"></i>
                     </button>
